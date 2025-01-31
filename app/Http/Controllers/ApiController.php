@@ -11,7 +11,7 @@ class ApiController extends Controller
     {
         $data = [
             'email' => 'musedikutemitope@gmail.com', 
-            'current_datetime' => Carbon::now()->toIso8601String(),
+            'current_datetime' => Carbon::now('UTC')->format('Y-m-d\TH:i:s\Z'),
             'github_url' => 'https://github.com/Josh6335/HngStage0' 
         ];
 
