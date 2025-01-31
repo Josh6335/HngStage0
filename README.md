@@ -26,3 +26,5 @@ This API returns basic information such as:
 3. php artisan key:generate
 4. php artisan serve
 5. Visit http://127.0.0.1:8000/api/hngstage0 in your browser or use Postman.
+
+https://hng.tech/hire/php-developers
