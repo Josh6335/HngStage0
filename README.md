@@ -7,7 +7,7 @@ This API returns basic information such as:
 - GitHub URL of the project
 
 ## API Endpoint
-- `GET /api/hng`
+- `GET /api/HngStage0`
 
 ### Response Format (200 OK)
 ```json
