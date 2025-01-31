@@ -17,7 +17,7 @@ This API returns basic information such as:
   "github_url": "https://github.com/Josh6335/HngStage0"
 }
 
-## How to Run Locally
+**How to Run Locally**
 1. Clone the repository:
    ```sh
    git clone https://github.com/Josh6335/HngStage0.git
