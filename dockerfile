@@ -21,11 +21,11 @@ RUN a2enmod rewrite
 # Copy existing application files
 COPY . /var/www/html
 
-# Install Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# Set correct permissions
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Install Laravel dependencies
-RUN composer install --no-dev --optimize-autoloader
+# Point Apache to Laravel's public folder
+RUN sed -i -e "s|/var/www/html|/var/www/html/public|g" /etc/apache2/sites-available/000-default.conf
 
 # Expose port 80
 EXPOSE 80
